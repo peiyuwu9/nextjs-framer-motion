@@ -11,7 +11,7 @@ function ConfigBtn({ formId }: Props) {
   const [configClass, setConfigClass] = useState("w-5 h-5 transition");
   const router = useRouter();
 
-  function handleShow(event: MouseEvent<HTMLDivElement>) {
+  function handleShow(event: MouseEvent<HTMLButtonElement>) {
     event.preventDefault();
     setConfigClass(`w-5 h-5 transition ${!show && "rotate-90"}`);
     setShow(!show);
